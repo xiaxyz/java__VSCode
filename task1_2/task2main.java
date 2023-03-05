@@ -14,10 +14,12 @@ public class task2main
         AllCost.SetInchXY(InchX, InchY);
         System.out.println("请输入框架类型(regular/fancy)");
         AllCost.SetFrameType(In.next());
+        System.out.println("请选择框架颜色(白色(write)免费):");
+        AllCost.SetColor(In.next());
         System.out.println("请输入皇冠数量(0为不要皇冠):");
         AllCost.SetNumberCrown(In.nextInt());
         AllCost.FigureAllCost();
-        System.out.println("总费用为" + AllCost.AllCost + "美元");
+        System.out.println("总费用为" + AllCost.getAllCost() + "美元");
         In.close();
     }
 }
